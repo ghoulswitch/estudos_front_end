@@ -7,6 +7,7 @@ do {
 
 /* var c = 1
 
+//o teste lógico é feito no início
 while (c <= 6) {
     console.log(`Tudo bem?`)
     //console.log(`Passo ${c}`)
