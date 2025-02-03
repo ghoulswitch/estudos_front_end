@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #C5EBD6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063D1E;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destque: "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    margin: 0; /*remove as margens padrão do navegador*/
+    background-color:var(--cor1);
+}
+
+header {
+    font-family: var(--fonte-destque);
+    background-image: linear-gradient( to bottom, var(--cor3), var(--cor5));
+    min-height: 140px;
+    padding: 18px 0 0 0;
+    text-align: center;
+}
+
+header > h1#titulo-principal {
+    font-family: var(--fonte-destque);
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 3px 2px 4px black;
+}
+
+header > p.titulo-subtexto {
+    font-family:var(--fonte-padrao);
+    color: white;
+    margin: auto;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding: 0 6px 10px 6px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.534);
+}
+
+nav {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor5);
+    padding: 50px 23px 23px 23px;
+}
+
+nav > a {
+    font-family: var(--fonte-destque);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: #2FA866;
+    color: #062D1E;
+    border-radius: 3px;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    max-width: 1000px;
+    /*width: 1000px;*/
+    /*height: 599px;*/
+    /*margin: 0 50px 0 160px;*/
+    margin: auto;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
+    text-align: justify;
+    /*position:absolute;*/
+}
+
+main > article {
+    background-color: rgb(255, 255, 255);
+    /*width: 970px;
+    height: 380px;
+    margin: 10px 5px 5px 12px;*/
+}
+
+article > h1.titulo-texto {
+    font-family: var(--fonte-android);
+    margin: 0;
+}
+
+article > h2 {
+    font-family: var(--fonte-android);
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: .5em;
+}
+
+h2.subtitulo-dois {
+    font-family: var(--fonte-android);
+    margin: 0 0 10px 0;
+}
+
+main h1, h2 {
+    color:var(--cor5);
+}
+
+p.texto-principal {
+    font-family: var(--fonte-padrao);
+    margin: 10px 0 10px 0;
+    text-indent: 30px;
+    line-height: 1.3em;
+}
+
+main strong {
+    color:var(--cor1);
+    background-color: var(--cor4);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor4);
+    margin: 0;
+}
+
+a.externo::after {
+    content: "\1F517";
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+img.imagem-um {
+    background-color: #062D1E;
+    margin: auto;
+}
+
+img.imagem-um-pq {
+    background-color: #062D1E;
+    margin: auto;
+}
+
+img.imagem-dois {
+    display: block;
+    width: 100%;
+}
+
+/*img.imagem-dois-pq {
+    width: 100%;
+    display: flex;
+}*/
+
+img.imagem-tres {
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    /* background-color: var(--cor5); */
+    margin: 0 -20px 0 -20px;
+    padding: 20px;
+
+    padding-bottom: 50%; /*arruma o video dentro da div novamente; também mexe com as barras laterais dentro do vídeo*/
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #C5EBD6;
+    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.253);
+
+    margin: 0 10px 32px 10px;
+    padding: 0 0 8px 0;
+    border-radius: 0 0 5px 5px;
+    text-indent: 30px;
+    line-height: 1.3em; 
+
+    /* config do professor */
+    /* padding: 10px;
+    border-radius: 10px; */
+}
+
+h3.titulo-aside {
+    font-family: var(--fonte-padrao);
+    background-color: #2FA866;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0 0 0;
+    height: 29px;
+
+    /* config do professor */
+    /* padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0; */
+}
+
+.texto-aside {
+    font-family: var(--fonte-padrao);
+    margin: 10px 15px 10px 15px;
+}
+
+ul {
+    font-family: var(--fonte-padrao);
+    columns: 2;
+}
+
+body > footer {
+    background-color:var(--cor4);
+    height: 25px;
+    margin: 30px 0 0 0;
+}
+
+footer >p.texto-rodape {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: .8em;
+    padding-top: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color:var(--cor1);
+}
+
+/*body > footer {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor5);
+    width: 1366px;
+    height: 10px;
+    margin: 16px 0 0 0;
+}/*
