@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./estilo.css">
+
+    <title> Super Contador </title>
+</head>
+
+<body>
+
+    <header> Vamos contar </header>
+
+    <section>
+
+        <div id="dados">
+            <p>
+                <label for="inicio"> Início: </label> <!-- O valor de for deve ser igual ao valor do id do campo de entrada -->
+                <input type="number" name="inicio" id="txtinicio" placeholder="Digite o início da contagem"> <!-- Para enviar dados de um formulário ao servidor, você precisa usar o atributo name que é o identificador que será usado para os dados do formulário no backend.-->
+            </p>
+
+            <p>
+                <label for="fim"> Fim: </label>
+                <input type="number" name="fim" id="txtfim" placeholder="Digite o fim da contagem">
+            </p>
+
+            <p>
+                <label for="intervalo"> Intervalo: </label>
+                <input type="number" name="intervalo" id="txtintervalo" placeholder="Digite o intervalo da contagem">
+            </p>
+
+            <p>
+                <input type="button" value="contar" id="contar" onclick="contar()">
+            </p>
+        </div>
+
+        <div id="resultado"> 
+            Preparando a contagem ... 
+        </div>
+
+    </section>
+
+    <footer>
+        <p> &copy; CursoemVideo </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
