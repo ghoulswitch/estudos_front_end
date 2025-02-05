@@ -16,7 +16,7 @@ section {
     padding: 15px;
     border-radius: 13px;
     margin: 0 110px 0 110px;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.397);
+    box-shadow: 8px 8px 10px #00000065;
 }
 
 #txtinicio {
