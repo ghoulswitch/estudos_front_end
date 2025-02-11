@@ -1,9 +1,9 @@
 function verificar(){
-    var data = new Date() /* pega a data e hora do sistema */
-    var ano = data.getFullYear() /* Ano atual com quatro digitos */
+    var data = new Date() 
+    var ano = data.getFullYear() 
 
     var formAno = document.getElementById('txtano')
-    var resultado = document.querySelector /* faz o mesmo que getElementById */('div#resultado') 
+    var resultado = document.querySelector ('div#resultado') 
 
     if (formAno.value.length == 0 || formAno.value > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
@@ -13,8 +13,8 @@ function verificar(){
         var idade = ano - Number(formAno.value)
 
         var genero = ''
-        var img = document.createElement('img') /* cria uma tag img */ 
-        img.setAttribute('id', 'foto') /* add id para foto */
+        var img = document.createElement('img')  
+        img.setAttribute('id', 'foto') 
 
         if (formSex[0].checked) {
             genero = 'Homem'
@@ -62,7 +62,7 @@ function verificar(){
         resultado.innerHTML = `Detectamos ${genero} com ${idade} anos.`
         resultado.style.textAlign = 'center' 
 
-        resultado.appendChild(img) /* appendChild adiciona o elemento img ao resultado */
+        resultado.appendChild(img) 
 
     }
 }
