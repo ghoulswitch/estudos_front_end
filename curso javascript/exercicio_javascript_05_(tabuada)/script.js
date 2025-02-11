@@ -12,8 +12,8 @@ function gerarTabuada() {
         tabuada.innerHTML = '' //limpa a tabuada antes de gerar uma nova
 
         while (c <= 10) {
-            let item = document.createElement('option') // cria um elamento option que funciona como uma lista
-            item.text = `${numero} x ${c} = ${numero*c}` //o que vai aparecer no option/lista
+            let item = document.createElement('option')
+            item.text = `${numero} x ${c} = ${numero*c}` 
             tabuada.appendChild(item) //adiciona o item na lista
             c++ //garante que o loop vai parar em 10
 
