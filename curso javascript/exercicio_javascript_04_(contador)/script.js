@@ -1,5 +1,5 @@
 function contar () {
-    let inicio = document.getElementById('txtinicio') /* usando let no lugar de var faz com que este valor seja exclusivo desta função/bloco; prática recomendada para evitar conflitos de variáveis e bugs. */
+    let inicio = document.getElementById('txtinicio')
     let fim = document.getElementById('txtfim')
     let intervalo = document.getElementById('txtintervalo')
     let resultado = document.getElementById('resultado')
@@ -21,8 +21,8 @@ function contar () {
 
         if (i < f) {
             //contagem crescente
-            for (let c = i; c <= f; c += inter) /* c += inter é a mesma coisa que  c = c + inter; aula 14 */ {
-                resultado.innerHTML += /* += é concatenação */ ` ${c}, ` /* U+1F600 -> \u{1F600} (formatação unicode para o javascript)  */
+            for (let c = i; c <= f; c += inter) {
+                resultado.innerHTML += ` ${c}, ` /* U+1F600 -> \u{1F600} (formatação unicode para o javascript)  */
             }
             resultado.innerHTML += `\u{1F3C1}`
         } else {
