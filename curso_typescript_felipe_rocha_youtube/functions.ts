@@ -4,15 +4,15 @@ const soma = (a: number, b: number) => {
 };
 
 const valor = soma(2, 3);
-console.log(valor); 
 
 //outra forma de declarar a mesma função
-/*const soma =  (a: number, b: number): string => {
-    return (a+b).toString();
+const soma =  (a: number, b: number): string => {
+    return (a+b).toString(); 
 };
 
-const valor = soma(2, 3);*/
-
+//função que não retorna nada
 const log = (message: string) => {
-    console.log(message); //retorna void pq não possui nenhuma info para retornar
+    console.log(message); 
 };
+
+//INTERFACES COM FUNÇÕES
