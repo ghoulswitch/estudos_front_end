@@ -1,8 +1,8 @@
-
+//ESCOPO Global
 const x = "variavel global";
 
 //ESCOPO
-//ESCOPO Global
+
 //ESCOPO de Função
 const funcao = () => { //função do tipo arrow function; é a melhor forma de declarar funções pois há menos possibilidades de erros
     const a = "variavel do escopo de função";

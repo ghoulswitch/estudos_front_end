@@ -1,3 +1,4 @@
+//ESTRUTURAS DE REPETIÇÃO
 //ForEach é um tipo de loop que percorre cada elemento de um array e executa uma função para cada elemento.
 
 const notasFinais = [
