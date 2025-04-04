@@ -5,6 +5,8 @@ type User = {
     email: string
     password?: string //o ponto de interrogação indica que a propriedade é opcional
     orders?: Orders[]
+    //função
+    register?(): string;
 };
 
 //criando um tipo de dado Orders que faz parte do tipo User 
@@ -18,7 +20,10 @@ const usuario: User = {
     firstName: "Milly",
     age: 19,
     email: "mowoono@gmail.com",
-    orders: [{productId: "1", price: 100}]
+    orders: [{productId: "1", price: 100}],
+    register() {
+        return "Usuário registrado com sucesso!"
+    },
 };
 
 //UNIONS - é a união de dois tipos de dados
