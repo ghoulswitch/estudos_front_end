@@ -1,0 +1,61 @@
+body {
+    background-image: linear-gradient(135deg, #0038ff, #e48f41);
+    height: 100vh;
+}
+
+#contentParent {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .content {
+    border: 2px solid red;
+} */
+
+#photo-principal {
+    background-image: url(../media/photos/photo.jpg);
+    height: 225px;
+    width: 225px;
+    background-size: cover; 
+    background-position: -15px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem; /* 24px / 16: rem */
+    font-weight: 700;
+    margin: 33px 0px 27px 0px;
+    text-align: center;
+}
+
+.botao_social {
+    display: flex; 
+    align-items: center;
+    border-radius: 50px;
+    width: 255px;
+    background-color: #00000029;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 27px;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 30px;
+
+    img {
+        height: 24px;
+    }
+
+    p {
+        font-size: 1.125rem;
+        padding-left: 15px;
+    }
+
+}
+
+.botaoInsta {
+    background-color: #000000b4;
+}
