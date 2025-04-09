@@ -21,37 +21,95 @@
         <img src="./media/icon-cafe.png" alt="">
 
         <ul id="navbar-lista">
-            <li> Sobre mim </li>
-            <li> Skills </li>
-            <li> Projetos </li>
-            <li> <b>Contato</b> </li>
+            <li> <a href="#aboutme-section"> Sobre mim </a> </li>
+            <li> <a href="#skills-section"> Skills </a> </li>
+            <li> <a href=""> Projetos </a> </li>
+            <li> <a href="#contatos-section"> <b> Contato </b> </a> </li>
         </ul>
     </nav>
 
+    <!-- HOME -->
     <section id="home-section">
         <div id="foto-home"></div>
 
         <div id="texts-home">
-            <h1> Diemilly Neves </h1>
-            <h2> Desenvolvedora frontend </h2>
-            <div class="download-button">
-                <img src="./media/download-Icon.png" alt="download-button">
-                <a href="./src/sources/curriculo.pdf" download="curriculo.pdf"> Baixar currículo </a>
+            <div>
+                <h1> Diemilly Neves </h1>
+                <h2> Desenvolvedora frontend </h2>
+                <div class="download-button">
+                    <img src="./media/download-Icon.png" alt="download-button">
+                    <a href="./src/sources/curriculo.pdf" download="curriculo.pdf"> Baixar currículo </a>
+                </div>
             </div>
         </div>
 
     </section>
 
-    <section id="about-section">
-        <h1> Sobre mim </h1>
+    <!-- ABOUT ME -->
+    <section id="aboutme-section">
+
+        <div id="texts-aboutme-container">
+            <div id="texts-aboutme-items">
+                <h1 class="tittles"> Sobre mim </h1>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti minus illum ratione fuga nesciunt repudiandae molestiae saepe ipsa tempore soluta maxime dignissimos animi voluptatibus, aut porro aliquid et at voluptates. </p>
+                
+                <div class="linkedin-button">
+                    <img src="./media/setinha.png">
+                    <a href="https://www.linkedin.com/in/diemilly-neves/" target="_blank"> Confira meu LinkedIn </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="foto-aboutme"></div>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills-section">
-        <h1> Skills </h1>
+        <div class="skills-overlay">
+            <h1> Skills </h1>
+            <ul>
+                <li> HTML </li>
+                <li> CSS </li>
+                <li> JavaScript </li>
+                <li> React Js </li>
+                <li> Inglês </li>
+                <li> Golang </li>
+                <li> Node Js </li>
+            </ul>
+            <div class="curriculo-button">
+                <img src="./media/download-Icon.png" alt="download-button">
+                <a href="./src/sources/curriculo.pdf" download="curriculo.pdf"> Baixar currículo completo </a>
+            </div>
+        </div>
     </section>
 
+    <!-- CONTATOS -->
     <section id="contatos-section">
-        <h1> Contatos </h1>
+        <div id="texts-contatos-container">
+            <div id="texts-contatos-child">
+                <h1> Contatos </h1>
+                <p id="paragrafo-contatos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eaque eveniet quam minima voluptas fugit in atque soluta. Numquam quaerat, temporibus vero sed quo est velit corrupti? Molestias, commodi tempore!</p>
+
+                <address class="emailFone">
+                    <div class="emailFone-items">
+                        <img class="email-icon" src="./media/email-icon.png" alt="email-icon">
+                        <p>email@gmail.com</p>
+                    </div>
+                    <div class="emailFone-items">
+                        <img class="fone-icon" src="./media/whatsapp-icon.png" alt="numero-icon">
+                        <p>+55 (92)0000-00</p>
+                    </div>
+                </address>
+
+                <div class="medias-sociais">
+                    <a href="https://www.linkedin.com/in/diemilly-neves/" target="_blank"> <img src="./media/linkedin-icon.png" alt="linkedin"> </a>
+                    <a href="" target="_blank"> <img src="./media/insta-icon.png" alt="instagram"> </a>
+                    <a href="https://github.com/ghoulswitch" target="_blank"> <img src="./media/github-icon.png" alt="github"> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="foto-contatos"></div>
     </section>
     
 </body>
