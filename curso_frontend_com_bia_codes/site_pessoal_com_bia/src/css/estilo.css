@@ -46,7 +46,7 @@ nav {
     #foto-home {
         width: 40vw;
         height: 100vh - 65px;
-        background-image: url(/site_pessoal_com_bia/media/foto.jpg);
+        background-image: url("/media/foto.jpg");
         background-size: cover;
         background-position: center;
     }
@@ -115,7 +115,7 @@ nav {
     }
 
     #foto-aboutme {
-        background-image: url(/site_pessoal_com_bia/media/foto-about-me.jpg);
+        background-image: url("/media/foto-about-me.jpg");
         width: 40vw;
         background-size: cover;
         background-position: center;
@@ -139,7 +139,7 @@ nav {
 }
 
 #skills-section {
-    background-image: url(/site_pessoal_com_bia/media/foto-contatos.jpg);
+    background-image: url("/media/foto-contatos.jpg");
     background-size: cover;
     background-position: center;
 
@@ -267,7 +267,7 @@ nav {
     }
 
     .foto-contatos {
-        background-image: url(/site_pessoal_com_bia/media/foto-bolhas.jpg);
+        background-image: url("/media/foto-bolhas.jpg");
         width: 40vw;
         background-size: cover;
         background-position: center;
