@@ -1,0 +1,35 @@
+body {
+    background-color: #000000bd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    margin: 30px 0 10px 10px;
+}
+
+p {
+    color: rgba(255, 228, 196, 0.411);
+    margin: 10px 0 0 25px;
+    font-weight: 400;
+}
+
+/* Combinador descendente */
+div p {
+    color: #d66289de;
+}
+
+/* Combinador filho */
+div > p {
+    background-color: pink;
+} /* Afeta apenas aqueles p que são *diretamente* filhos de uma div; o que não inclui aqueles dentro das sections */
+
+/* Combinador adjascente */
+h2 + p {
+    text-decoration: underline;
+} /*Afeta apenas o primeiro p que estiver após a um h2*/
+
+/* Combinador irmão-geral */
+h2 ~ p {
+    font-style: italic;
+} /* Aplica apenas nos p que estiverem no mesmo nível hierarquico que os h2 (no caso, todo possuem a primeira div como pai) */
