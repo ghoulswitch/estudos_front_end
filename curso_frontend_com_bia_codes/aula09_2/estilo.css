@@ -1,0 +1,55 @@
+body {
+    background-color: #202020;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 45px 0px 0px 10px;
+}
+
+h2 {
+    margin: 15px 0px 0px 25px;
+    color: rgb(219, 219, 219);
+}
+
+.p01 {
+    margin: 12px 0px 50px 25px;
+}
+
+.p01::before {
+    content: "( ˊᵕˋ )";
+    color: blueviolet;
+}
+
+.p01::after {
+    content: "｡ㅤ｡";
+    color: rgb(107, 107, 233);
+}
+
+.p02 {
+    margin: 12px 0px 50px 25px;
+}
+
+.p02::first-line {
+    font-weight: bold;
+    color: rgb(100, 75, 41);
+}
+
+.p03 {
+    margin: 12px 0px 50px 25px;
+}
+
+.p03::first-letter {
+    text-decoration: overline;
+}
+
+.p04 {
+    margin: 12px 0px 50px 25px;
+}
+
+/* Muda o estilo quando o elemento (p) for selecionado */
+.p04::selection {
+    background-color: #892be234;
+    color: black;
+}
