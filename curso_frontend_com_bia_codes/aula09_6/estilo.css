@@ -1,0 +1,85 @@
+* {
+    background-color: rgb(61, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+    padding: 0 0 0.5rem 0.1rem;
+}
+
+p {
+    color: white;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.imgContainer {
+    display: flex;
+}
+
+.img01 {
+    background-image: url(/aula09_6/media/lily.jpg);
+    height: 400px;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.img02 {
+    background-image: url(/aula09_6/media/lucy.jpg);
+    height: 400px;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+}
+
+/* at rule(?) */
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+    }
+
+    .imgContainer {
+        flex-direction: column;
+    }
+
+    .img01, .img02 {
+        width: 100vw;
+    }
+}
+
+/* Range de tamanhos */
+/* @media (max-width: 600px) and (max-width: 800px) {
+    
+    body {
+        background-color: bisque;
+    }
+
+} */
+
+/* Orientation: portrait ou landscape */
+    /* @media (orientation: portrait) {
+
+    } */
+
+/* Pesquisar sobre Break Points mais utilizados */
