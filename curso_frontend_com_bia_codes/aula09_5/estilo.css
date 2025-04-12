@@ -1,0 +1,38 @@
+* {
+    background-color: rgb(61, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #cacaca;
+}
+
+p {
+    font-weight: 600;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    div {
+        background-color: #410c72;
+        padding: 2rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.gatin {
+    max-width: 100%;
+}
