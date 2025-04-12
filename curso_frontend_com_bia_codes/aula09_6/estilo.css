@@ -61,10 +61,18 @@ p {
 
     .imgContainer {
         flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 1rem;
     }
 
-    .img01, .img02 {
-        width: 100vw;
+    .img01 {
+        width: 90vw;
+    }
+
+    .img02 {
+        width: 90vw;
+        margin-bottom: 1rem;
     }
 }
 
