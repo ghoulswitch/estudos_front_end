@@ -1,0 +1,14 @@
+body {
+    background-color: #3d3d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#tituloCustomizado {
+    color: #d100d1;
+    text-decoration: underline;
+}
+
+.boldText {
+    font-weight: bold;
+}
