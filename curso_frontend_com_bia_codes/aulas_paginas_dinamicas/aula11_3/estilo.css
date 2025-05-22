@@ -1,0 +1,16 @@
+body {
+    background-color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    background-color: rgba(206, 0, 206, 0.521);
+    padding: 1.5em 5em;
+    border-radius: 0.5em;
+    border-style: unset;
+    cursor: pointer;
+}
