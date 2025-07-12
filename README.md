@@ -34,5 +34,5 @@ Este repositório é um compilado das minhas atividades, práticas e anotações
 ## 📌 Observações
 
 Este repositório está em constante atualização à medida que novos cursos, desafios e projetos são finalizados.  
-Sinta-se à vontade para explorar, dar feedback ou contribuir!
+Sinta-se à vontade para explorar ou deixar um feedback!
 
