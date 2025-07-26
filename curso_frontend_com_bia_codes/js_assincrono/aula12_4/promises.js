@@ -1,6 +1,13 @@
 const catsFacts = () => { 
     fetch('https://meowfacts.herokuapp.com/') 
-    .then((resposta) => resposta.json()) 
+
+    .then((resposta) => {
+        if (!resposta.ok) { //verifica se a resposta é ok 
+            throw new Error('Algo deu errado!') //lança um erro se a resposta não for ok
+        }
+        return resposta.json();
+    }) 
+
     .then((batata) => console.log(batata)) 
     .catch((error) => console.log(error)); //captura erros caso a requisição falhe
 }
