@@ -1,0 +1,19 @@
+body {
+    background-color: #cf8698;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+h1, h2, h3, label {
+    color: white;
+}
+
+form {
+    input:invalid {
+        border-color: red;
+    }
+
+    input:valid {
+        border-color: green;
+    }
+}

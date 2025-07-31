@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title> Aula 23 </title>
+</head>
+<body>
+
+    <h1> Conectando form com POST </h1>
+    <h2> Formulários </h2>
+    <h3> Pesquisa de satisfação dos geladinhos da Bia! </h3>
+
+    <form>
+        <div>
+            <label for="nome"> Seu nome: </label>
+            <input id="nome" name="name" type="text" required>
+        </div>
+        <div>
+            <label for="email"> Email: </label>
+            <input id="email" name="email" required type="email" required>
+        </div>
+        <div>
+            <label for="genero"> Seu gênero: </label>
+            <select name="genero" id="genero">
+                <option value="masculino"> Masculino </option>
+                <option value="feminino"> Feminino </option>
+                <option value="naoBinario"> Não-binário </option>
+                <option value="outro"> Outro </option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend> O que você achou do nosso produto? </legend>
+            <div>
+                <input type="radio" id="bom" name="opiniao" value="bom" required/>
+                <label for="bom"> Bom </label>
+            </div>
+            <div>
+                <input type="radio" id="ruim" name="opiniao" value="ruim" required/>
+                <label for="ruim"> Ruim </label>
+            </div>
+            <div>
+                <input type="radio" id="indiferente" name="opiniao" value="indiferente" required/>
+                <label for="indiferente"> Indiferente </label>
+            </div>
+        </fieldset>
+
+        <fieldset id="geladinhos">
+            <legend> Quais sabores você compraria denovo? </legend>
+            <div>
+                <input type="checkbox" id="chocolate" name="geladinhos" value="chocolate"/>
+                <label for="chocolate"> Chocolate </label>
+            </div>
+            <div>
+                <input type="checkbox" id="morango" name="geladinhos" value="morango"/>
+                <label for="morango"> Morango </label>
+            </div>
+            <div>
+                <input type="checkbox" id="abacaxi" name="geladinhos" value="abacaxi"/>
+                <label for="abacaxi"> Abacaxi </label>
+            </div>
+        </fieldset>
+        
+        <div>
+            <label for="mensagem"> Tem algo a nos dizer? </label>
+            <textarea id="message"></textarea>
+        </div>
+
+        <button> Submeter formulário </button>
+    </form>
+    
+    <script src="form.js"></script>
+</body>
+</html>
